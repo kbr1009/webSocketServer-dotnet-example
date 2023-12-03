@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{791E2C42-EE48-4294-8B94-B28B9F66D04D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebSocketServer", "src\WebSocketServer\WebSocketServer.csproj", "{29BECB20-7AF3-48B5-99CB-F79AA8F06595}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Http", "Http", "{62D63739-970D-4E00-BA79-22CC83B45B5E}"
+	ProjectSection(SolutionItems) = preProject
+		src\Http\default.conf = src\Http\default.conf
+		src\Http\Dockerfile = src\Http\Dockerfile
+		src\Http\src\index.html = src\Http\src\index.html
+	EndProjectSection
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E4EDB56C-9C71-4DFB-BCE2-C2DA7DEB9448}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DBC28155-30C6-4A21-9392-7DBAD3CEBFCB}"
+	ProjectSection(SolutionItems) = preProject
+		src\Http\src\index.html = src\Http\src\index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{B870EA51-61A8-4489-AB75-04E8C5F4CBA1}"
+	ProjectSection(SolutionItems) = preProject
+		src\Http\src\js\index.js = src\Http\src\js\index.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29BECB20-7AF3-48B5-99CB-F79AA8F06595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29BECB20-7AF3-48B5-99CB-F79AA8F06595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29BECB20-7AF3-48B5-99CB-F79AA8F06595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29BECB20-7AF3-48B5-99CB-F79AA8F06595}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4EDB56C-9C71-4DFB-BCE2-C2DA7DEB9448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4EDB56C-9C71-4DFB-BCE2-C2DA7DEB9448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4EDB56C-9C71-4DFB-BCE2-C2DA7DEB9448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4EDB56C-9C71-4DFB-BCE2-C2DA7DEB9448}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{29BECB20-7AF3-48B5-99CB-F79AA8F06595} = {791E2C42-EE48-4294-8B94-B28B9F66D04D}
+		{62D63739-970D-4E00-BA79-22CC83B45B5E} = {791E2C42-EE48-4294-8B94-B28B9F66D04D}
+		{DBC28155-30C6-4A21-9392-7DBAD3CEBFCB} = {62D63739-970D-4E00-BA79-22CC83B45B5E}
+		{B870EA51-61A8-4489-AB75-04E8C5F4CBA1} = {DBC28155-30C6-4A21-9392-7DBAD3CEBFCB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {647DD08A-45D5-4837-8486-FF24DA77C29C}
+	EndGlobalSection
+EndGlobal

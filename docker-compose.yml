@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  nginx:
+    build: ./src/Http
+    image: proxyserver
+    restart: always
+    container_name: webproxy
+    ports:
+    - 80:80
+    depends_on:
+    - websocketserver
+
+  websocketserver:
+    image: ${DOCKER_REGISTRY-}websocketserver
+    build:
+      context: .
+      dockerfile: src/WebSocketServer/Dockerfile
+    ports:
+    - 8080:8080
