@@ -2,11 +2,11 @@
 }
 
 // WebSocketサーバーのURL (例: "ws://localhost:8080")
-var wsUrl = "ws://localhost:8080/ws";
+var wsUrl = "ws://localhost/ws";
 // WebSocket接続を開く
 var ws = new WebSocket(wsUrl);
 ws.onopen = function () {
-    console.log("接続が開かれました。");
+    alert("WebSocket接続が開かれました。");
 };
 
 // サーバーからのメッセージを受信したときの処理
